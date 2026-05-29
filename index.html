@@ -1,0 +1,243 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COMIDA RAPIDA "EL GUSTITO"| El verdadero sabor de la velocidad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b30000;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b30000;
+        }
+
+        /* Sección Hero (Inicio) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1300&q=80') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        .btn {
+            background-color: #b30000;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e60000;
+        }
+
+        /* Sección Menú */
+        .menu-section {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            font-size: 36px;
+            color: #b30000;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .menu-info p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            height: 40px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #b30000;
+        }
+
+        /* Pie de página (Footer) */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .socials a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+body>
+
+    <header>
+        <div class="logo">🍔 COMIDA RAPIDA "EL GUSTITO"</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>¡Sabor Intenso en Cada Mordisco!</h1>
+        <p>Las mejores hamburguesas y papas fritas de la ciudad, hechas al instante.</p>
+        <a href="#menu" class="btn">Ver Menú</a>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Nuestro Menú Destacado</h2>
+        
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Hamburguesa Clásica con Queso">
+                <div class="menu-info">
+                    <h3>Clásica con Queso</h3>
+                    <p>Carne de res premium, queso cheddar fundido, lechuga, tomate y nuestra salsa secreta.</p>
+                    <span class="price">18 Bs.</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80" alt="Papas Fritas Crujientes">
+                <div class="menu-info">
+                    <h3>Papas Supremas</h3>
+                    <p>Papas rústicas doradas y crujientes, espolvoreadas con una mezcla especial de especias.</p>
+                    <span class="price">15 Bs.</span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=500&q=80" alt="Hot Dog Especial">
+                <div class="menu-info">
+                    <h3>Mega Hot Dog</h3>
+                    <p>Salchicha gigante, tocino crujiente, cebolla caramelizada, mostaza y kétchup.</p>
+                    <span class="price">20 Bs. </span>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=500&q=80" alt="Malteada de Fresa">
+                <div class="menu-info">
+                    <h3>Malteadas Cremosas</h3>
+                    <p>Exquisita malteada preparada con helado artesanal. Sabores: Fresa, Chocolate o Vainilla.</p>
+                    <span class="price"> 10 Bs.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>&copy; 2026 COMIDA RAPIDA "EL GUSTITO" - Todos los derechos reservados.</p>
+        <p>📍 Av.German Buchs, s/n</p>
+        <p>📞 Teléfono: 555-9876</p>
+        <div class="socials">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>
